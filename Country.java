@@ -4,6 +4,7 @@ public class Country
   boolean isPeaceful;
   int militarySize;
   int population;
+  CountryState state = CountryState.PEACE;
   
   public Country(String name, int pop, int mil, boolean peaceful)
   {
@@ -28,6 +29,10 @@ public class Country
   {
     return countryName;
   }
+  public CountryState getState()
+  {
+    return state;
+  }
   
   //set
   
@@ -47,5 +52,6 @@ public class Country
   {
     this.population = population;
   }
+  //set coutnry
   
 }
